@@ -1,0 +1,478 @@
+<html>
+
+<head>
+  <title>品香亭點餐系統</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+    .badge-notify {
+      background: red;
+      position: relative;
+      top: -20px;
+      right: 10px;
+    }
+
+    .my-cart-icon-affix {
+      position: fixed;
+      z-index: 999;
+    }
+
+    a.book {
+      font-size: xx-large;
+    }
+  </style>
+</head>
+
+<body class="container">
+
+  <div class="page-header">
+    <h1>點餐系統
+      <div style="float: right; cursor: pointer;">
+        <span class="glyphicon glyphicon-shopping-cart my-cart-icon"><span
+            class="badge badge-notify my-cart-badge"></span></span>
+      </div>
+    </h1>
+    <a href="#bookmark01" class="btn btn-info book">主食</a>
+    <a href="#bookmark02" class="btn btn-info book">湯麵類</a>
+    <a href="#bookmark03" class="btn btn-info book">小菜</a>
+    <a href="#bookmark04" class="btn btn-info book">湯品</a>
+    <a href="#bookmark05" class="btn btn-info book">加購區</a>
+  </div>
+
+  <div class="page-header">
+    <h1 id="bookmark01">主食</h1>
+  </div>
+
+  <!-- <button type="addNewProduct" name="addNewProduct" id="addNewProduct">Add New Product</button> -->
+
+  <div class="row">
+    <div class="col-md-3 text-center">
+      <img src="images/img_1.jpg" width="150px" height="150px">
+      <br>
+      油飯 - <strong>$50</strong>
+      <br>
+      <button class="btn btn-danger my-cart-btn" data-id="1" data-name="油飯" data-summary="summary 1" data-price="50"
+        data-quantity="1" data-image="images/img_1.jpg">Add to Cart</button>
+    </div>
+
+    <div class="col-md-3 text-center">
+      <img src="images/img_2.jpg" width="150px" height="150px">
+      <br>
+      黑豬魯肉飯 - <strong>$50</strong>
+      <br>
+      <button class="btn btn-danger my-cart-btn" data-id="2" data-name="黑豬滷肉飯" data-summary="summary 2" data-price="50"
+        data-quantity="1" data-image="images/img_2.jpg">Add to Cart</button>
+    </div>
+
+    <div class="col-md-3 text-center">
+      <img src="images/img_3.jpg" width="150px" height="150px">
+      <br>
+      麻醬麵 - <strong>$50</strong>
+      <br>
+      <button class="btn btn-danger my-cart-btn" data-id="3" data-name="麻醬麵" data-summary="summary 3" data-price="50"
+        data-quantity="1" data-image="images/img_3.jpg">Add to Cart</button>
+    </div>
+
+    <div class="col-md-3 text-center">
+      <img src="images/img_4.jpg" width="150px" height="150px">
+      <br>
+      肉燥麵 - <strong>$45</strong>
+      <br>
+      <button class="btn btn-danger my-cart-btn" data-id="4" data-name="肉燥乾麵" data-summary="summary 4" data-price="45"
+        data-quantity="1" data-image="images/img_4.jpg">乾麵</button>
+      <button class="btn btn-danger my-cart-btn" data-id="4" data-name="肉燥烏龍麵" data-summary="summary 4" data-price="45"
+        data-quantity="1" data-image="images/img_4.jpg">烏龍麵</button>
+    </div>
+
+    <div class="col-md-3 text-center">
+      <img src="images/img_5.jpg" width="150px" height="150px">
+      <br>
+      肉燥乾板條 - <strong>$45</strong>
+      <br>
+      <button class="btn btn-danger my-cart-btn" data-id="5" data-name="肉燥乾板條" data-summary="summary 5" data-price="45"
+        data-quantity="1" data-image="images/img_5.jpg">Add to Cart</button>
+    </div>
+
+    <div class="col-md-3 text-center">
+      <img src="images/img_6.jpg" width="150px" height="150px">
+      <br>
+      炒麵 - <strong>$45</strong>
+      <br>
+      <button class="btn btn-danger my-cart-btn" data-id="6" data-name="炒麵" data-summary="summary 6" data-price="45"
+        data-quantity="1" data-image="images/img_6.jpg">Add to Cart</button>
+    </div>
+
+    <div class="col-md-3 text-center">
+      <img src="images/img_7.jpg" width="150px" height="150px">
+      <br>
+      炒米粉 - <strong>$45</strong>
+      <br>
+      <button class="btn btn-danger my-cart-btn" data-id="7" data-name="炒米粉" data-summary="summary 7" data-price="45"
+        data-quantity="1" data-image="images/img_7.jpg">Add to Cart</button>
+    </div>
+
+    <div class="col-md-3 text-center">
+      <img src="images/img_8.jpg" width="150px" height="150px">
+      <br>
+      涼麵 - <strong>$45</strong>
+      <br>
+      <button class="btn btn-danger my-cart-btn" data-id="8" data-name="涼麵" data-summary="summary 8" data-price="45"
+        data-quantity="1" data-image="images/img_8.jpg">Add to Cart</button>
+    </div>
+
+  </div>
+
+  <div class="page-header">
+    <h1 id="bookmark02">湯麵類</h1>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3 text-center">
+      <img src="images/img_9.jpg" width="150px" height="150px">
+      <br>
+      肝𦟪麵 - <strong>$80</strong>
+      <br>
+      <button class="btn btn-danger my-cart-btn" data-id="9" data-name="肝𦟪麵" data-summary="summary 9" data-price="80"
+        data-quantity="1" data-image="images/img_9.jpg">麵</button>
+      <button class="btn btn-danger my-cart-btn" data-id="9" data-name="肝𦟪米粉" data-summary="summary 9" data-price="80"
+        data-quantity="1" data-image="images/img_9.jpg">米粉</button>
+      <button class="btn btn-danger my-cart-btn" data-id="9" data-name="肝𦟪板條" data-summary="summary 9" data-price="80"
+        data-quantity="1" data-image="images/img_9.jpg">板條</button>
+      <button class="btn btn-danger my-cart-btn" data-id="9" data-name="肝𦟪飯" data-summary="summary 9" data-price="80"
+        data-quantity="1" data-image="images/img_9.jpg">飯</button>
+    </div>
+
+    <div class="col-md-3 text-center">
+      <img src="images/img_10.jpg" width="150px" height="150px">
+      <br>
+      嘴邊肉麵 - <strong>$80</strong>
+      <br>
+      <button class="btn btn-danger my-cart-btn" data-id="10" data-name="嘴邊肉麵" data-summary="summary 10" data-price="80"
+        data-quantity="1" data-image="images/img_10.jpg">麵</button>
+      <button class="btn btn-danger my-cart-btn" data-id="10" data-name="嘴邊肉米粉" data-summary="summary 10" data-price="80"
+        data-quantity="1" data-image="images/img_10.jpg">米粉</button>
+      <button class="btn btn-danger my-cart-btn" data-id="10" data-name="嘴邊肉板條" data-summary="summary 10" data-price="80"
+        data-quantity="1" data-image="images/img_10.jpg">板條</button>
+      <button class="btn btn-danger my-cart-btn" data-id="10" data-name="嘴邊肉飯" data-summary="summary 10" data-price="80"
+        data-quantity="1" data-image="images/img_10.jpg">飯</button>
+    </div>
+
+    <div class="col-md-3 text-center">
+      <img src="images/img_11.jpg" width="150px" height="150px">
+      <br>
+      綜合焿麵 - <strong>$75</strong>
+      <br>
+      <button class="btn btn-danger my-cart-btn" data-id="11" data-name="綜合焿麵" data-summary="summary 11" data-price="75"
+        data-quantity="1" data-image="images/img_11.jpg">麵</button>
+      <button class="btn btn-danger my-cart-btn" data-id="11" data-name="綜合焿米粉" data-summary="summary 11" data-price="75"
+        data-quantity="1" data-image="images/img_11.jpg">米粉</button>
+      <button class="btn btn-danger my-cart-btn" data-id="11" data-name="綜合焿板條" data-summary="summary 11" data-price="75"
+        data-quantity="1" data-image="images/img_11.jpg">板條</button>
+      <button class="btn btn-danger my-cart-btn" data-id="11" data-name="綜合焿飯" data-summary="summary 11" data-price="75"
+        data-quantity="1" data-image="images/img_11.jpg">飯</button>
+    </div>
+
+    <div class="col-md-3 text-center">
+      <img src="images/img_12.jpg" width="150px" height="150px">
+      <br>
+      魷魚焿麵 - <strong>$65</strong>
+      <br>
+      <button class="btn btn-danger my-cart-btn" data-id="12" data-name="魷魚焿麵" data-summary="summary 12" data-price="65"
+        data-quantity="1" data-image="images/img_12.jpg">麵</button>
+      <button class="btn btn-danger my-cart-btn" data-id="12" data-name="魷魚焿米粉" data-summary="summary 12" data-price="65"
+        data-quantity="1" data-image="images/img_12.jpg">米粉</button>
+      <button class="btn btn-danger my-cart-btn" data-id="12" data-name="魷魚焿板條" data-summary="summary 12" data-price="65"
+        data-quantity="1" data-image="images/img_12.jpg">板條</button>
+      <button class="btn btn-danger my-cart-btn" data-id="12" data-name="魷魚焿飯" data-summary="summary 12" data-price="65"
+        data-quantity="1" data-image="images/img_12.jpg">飯</button>
+    </div>
+
+    <div class="col-md-3 text-center">
+      <img src="images/img_13.jpg" width="150px" height="150px">
+      <br>
+      瘦肉焿麵 - <strong>$65</strong>
+      <br>
+      <button class="btn btn-danger my-cart-btn" data-id="13" data-name="瘦肉焿麵" data-summary="summary 13" data-price="65"
+        data-quantity="1" data-image="images/img_13.jpg">麵</button>
+      <button class="btn btn-danger my-cart-btn" data-id="13" data-name="瘦肉焿米粉" data-summary="summary 13" data-price="65"
+        data-quantity="1" data-image="images/img_13.jpg">米粉</button>
+      <button class="btn btn-danger my-cart-btn" data-id="13" data-name="瘦肉焿板條" data-summary="summary 13" data-price="65"
+        data-quantity="1" data-image="images/img_13.jpg">板條</button>
+      <button class="btn btn-danger my-cart-btn" data-id="13" data-name="瘦肉焿飯" data-summary="summary 13" data-price="65"
+        data-quantity="1" data-image="images/img_13.jpg">飯</button>
+    </div>
+
+    <div class="col-md-3 text-center">
+      <img src="images/img_14.jpg" width="150px" height="150px">
+      <br>
+      餛飩麵 - <strong>$60</strong>
+      <br>
+      <button class="btn btn-danger my-cart-btn" data-id="14" data-name="餛飩麵" data-summary="summary 14" data-price="60"
+        data-quantity="1" data-image="images/img_14.jpg">麵</button>
+      <button class="btn btn-danger my-cart-btn" data-id="14" data-name="餛飩米粉" data-summary="summary 14" data-price="60"
+        data-quantity="1" data-image="images/img_14.jpg">米粉</button>
+      <button class="btn btn-danger my-cart-btn" data-id="14" data-name="餛飩板條" data-summary="summary 14" data-price="60"
+        data-quantity="1" data-image="images/img_14.jpg">板條</button>
+      <button class="btn btn-danger my-cart-btn" data-id="14" data-name="餛飩飯" data-summary="summary 14" data-price="60"
+        data-quantity="1" data-image="images/img_14.jpg">飯</button>
+    </div>
+
+  </div>
+
+  <div class="page-header">
+    <h1 id="bookmark03">小菜</h1>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3 text-center">
+      <img src="images/img_15.jpg" width="150px" height="150px">
+      <br>
+      肝𦟪 - <strong>$70</strong>
+      <br>
+      <button class="btn btn-danger my-cart-btn" data-id="15" data-name="肝𦟪" data-summary="summary 15" data-price="70"
+        data-quantity="1" data-image="images/img_15.jpg">Add to Cart</button>
+    </div>
+
+    <div class="col-md-3 text-center">
+      <img src="images/img_16.jpg" width="150px" height="150px">
+      <br>
+      嘴邊肉 - <strong>$70</strong>
+      <br>
+      <button class="btn btn-danger my-cart-btn" data-id="16" data-name="嘴邊肉" data-summary="summary 16" data-price="70"
+        data-quantity="1" data-image="images/img_16.jpg">Add to Cart</button>
+    </div>
+
+    <div class="col-md-3 text-center">
+      <img src="images/img_17.jpg" width="150px" height="150px">
+      <br>
+      燙魷魚 - <strong>$70</strong>
+      <br>
+      <button class="btn btn-danger my-cart-btn" data-id="17" data-name="燙魷魚" data-summary="summary 17" data-price="70"
+        data-quantity="1" data-image="images/img_17.jpg">Add to Cart</button>
+    </div>
+
+    <div class="col-md-3 text-center">
+      <img src="images/img_18.jpg" width="150px" height="150px">
+      <br>
+      豆干 - <strong>$20</strong>
+      <br>
+      <button class="btn btn-danger my-cart-btn" data-id="18" data-name="豆干" data-summary="summary 18" data-price="20"
+        data-quantity="1" data-image="images/img_18.jpg">Add to Cart</button>
+    </div>
+
+    <div class="col-md-3 text-center">
+      <img src="images/img_19.jpg" width="150px" height="150px">
+      <br>
+      海帶 - <strong>$20</strong>
+      <br>
+      <button class="btn btn-danger my-cart-btn" data-id="19" data-name="海帶" data-summary="summary 19" data-price="20"
+        data-quantity="1" data-image="images/img_19.jpg">Add to Cart</button>
+    </div>
+
+    <div class="col-md-3 text-center">
+      <img src="images/img_20.jpg" width="150px" height="150px">
+      <br>
+      燙青菜 - <strong>$40</strong>
+      <br>
+      <button class="btn btn-danger my-cart-btn" data-id="20" data-name="燙青菜" data-summary="summary 20" data-price="40"
+        data-quantity="1" data-image="images/img_20.jpg">Add to Cart</button>
+    </div>
+
+    <div class="col-md-3 text-center">
+      <img src="images/img_21.jpg" width="150px" height="150px">
+      <br>
+      皮蛋豆腐 - <strong>$40</strong>
+      <br>
+      <button class="btn btn-danger my-cart-btn" data-id="21" data-name="皮蛋豆腐" data-summary="summary 21" data-price="40"
+        data-quantity="1" data-image="images/img_21.jpg">Add to Cart</button>
+    </div>
+
+    <div class="col-md-3 text-center">
+      <img src="images/img_22.jpg" width="150px" height="150px">
+      <br>
+      魯蛋 - <strong>$15</strong>
+      <br>
+      <button class="btn btn-danger my-cart-btn" data-id="22" data-name="魯蛋" data-summary="summary 22" data-price="15"
+        data-quantity="1" data-image="images/img_22.jpg">Add to Cart</button>
+    </div>
+
+  </div>
+
+  <div class="page-header">
+    <h1 id="bookmark04">湯品</h1>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3 text-center">
+      <img src="images/img_23.jpg" width="150px" height="150px">
+      <br>
+      綜合焿湯 - <strong>$60</strong>
+      <br>
+      <button class="btn btn-danger my-cart-btn" data-id="23" data-name="綜合焿湯" data-summary="summary 23" data-price="60"
+        data-quantity="1" data-image="images/img_23.jpg">Add to Cart</button>
+    </div>
+
+    <div class="col-md-3 text-center">
+      <img src="images/img_24.jpg" width="150px" height="150px">
+      <br>
+      魷魚焿湯 - <strong>$50</strong>
+      <br>
+      <button class="btn btn-danger my-cart-btn" data-id="24" data-name="魷魚焿湯" data-summary="summary 24" data-price="50"
+        data-quantity="1" data-image="images/img_24.jpg">Add to Cart</button>
+    </div>
+
+    <div class="col-md-3 text-center">
+      <img src="images/img_25.jpg" width="150px" height="150px">
+      <br>
+      瘦肉焿湯 - <strong>$50</strong>
+      <br>
+      <button class="btn btn-danger my-cart-btn" data-id="25" data-name="瘦肉焿湯" data-summary="summary 25" data-price="50"
+        data-quantity="1" data-image="images/img_25.jpg">Add to Cart</button>
+    </div>
+
+    <div class="col-md-3 text-center">
+      <img src="images/img_26.jpg" width="150px" height="150px">
+      <br>
+      肝𦟪湯 - <strong>$50</strong>
+      <br>
+      <button class="btn btn-danger my-cart-btn" data-id="26" data-name="肝𦟪湯" data-summary="summary 26" data-price="50"
+        data-quantity="1" data-image="images/img_26.jpg">Add to Cart</button>
+    </div>
+
+    <div class="col-md-3 text-center">
+      <img src="images/img_27.jpg" width="150px" height="150px">
+      <br>
+      嘴邊肉湯 - <strong>$50</strong>
+      <br>
+      <button class="btn btn-danger my-cart-btn" data-id="27" data-name="嘴邊肉湯" data-summary="summary 27" data-price="50"
+        data-quantity="1" data-image="images/img_27.jpg">Add to Cart</button>
+    </div>
+
+    <div class="col-md-3 text-center">
+      <img src="images/img_28.jpg" width="150px" height="150px">
+      <br>
+      鱈魚丸湯 - <strong>$40</strong>
+      <br>
+      <button class="btn btn-danger my-cart-btn" data-id="28" data-name="鱈魚丸湯" data-summary="summary 28" data-price="40"
+        data-quantity="1" data-image="images/img_28.jpg">Add to Cart</button>
+    </div>
+
+    <div class="col-md-3 text-center">
+      <img src="images/img_29.jpg" width="150px" height="150px">
+      <br>
+      金針湯 - <strong>$40</strong>
+      <br>
+      <button class="btn btn-danger my-cart-btn" data-id="29" data-name="金針湯" data-summary="summary 29" data-price="40"
+        data-quantity="1" data-image="images/img_29.jpg">Add to Cart</button>
+    </div>
+
+    <div class="col-md-3 text-center">
+      <img src="images/img_30.jpg" width="150px" height="150px">
+      <br>
+      餛飩湯 - <strong>$40</strong>
+      <br>
+      <button class="btn btn-danger my-cart-btn" data-id="30" data-name="餛飩湯" data-summary="summary 30" data-price="40"
+        data-quantity="1" data-image="images/img_30.jpg">Add to Cart</button>
+    </div>
+
+    <div class="col-md-3 text-center">
+      <img src="images/img_31.jpg" width="150px" height="150px">
+      <br>
+      香菇貢丸湯 - <strong>$35</strong>
+      <br>
+      <button class="btn btn-danger my-cart-btn" data-id="31" data-name="香菇貢丸湯" data-summary="summary 31" data-price="35"
+        data-quantity="1" data-image="images/img_31.jpg">Add to Cart</button>
+    </div>
+
+    <div class="col-md-3 text-center">
+      <img src="images/img_32.jpg" width="150px" height="150px">
+      <br>
+      豆腐蛋花湯 - <strong>$35</strong>
+      <br>
+      <button class="btn btn-danger my-cart-btn" data-id="32" data-name="豆腐蛋花湯" data-summary="summary 32" data-price="35"
+        data-quantity="1" data-image="images/img_32.jpg">Add to Cart</button>
+    </div>
+
+  </div>
+
+  <div class="page-header">
+    <h1 id="bookmark05">加購區</h1>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3 text-center">
+      <img src="images/img_33.jpg" width="150px" height="150px">
+      <br>
+      加麵 - <strong>$10</strong>
+      <br>
+      <button class="btn btn-danger my-cart-btn" data-id="33" data-name="加麵" data-summary="summary 33" data-price="10"
+        data-quantity="1" data-image="images/img_33.jpg">Add to Cart</button>
+    </div>
+  </div>
+
+
+
+  <script src="js/jquery-2.2.3.min.js"></script>
+  <script type='text/javascript' src="js/bootstrap.min.js"></script>
+  <script type='text/javascript' src="js/jquery.mycart.js"></script>
+  <script type="text/javascript">
+    $(function () {
+
+      var goToCartIcon = function ($addTocartBtn) {
+        var $cartIcon = $(".my-cart-icon");
+        var $image = $('<img width="30px" height="30px" src="' + $addTocartBtn.data("image") + '"/>').css({ "position": "fixed", "z-index": "999" });
+        $addTocartBtn.prepend($image);
+        var position = $cartIcon.position();
+        $image.animate({
+          top: position.top,
+          left: position.left
+        }, 500, "linear", function () {
+          $image.remove();
+        });
+      }
+
+      $('.my-cart-btn').myCart({
+        currencySymbol: '$',
+        classCartIcon: 'my-cart-icon',
+        classCartBadge: 'my-cart-badge',
+        classProductQuantity: 'my-product-quantity',
+        classProductRemove: 'my-product-remove',
+        classCheckoutCart: 'my-cart-checkout',
+        affixCartIcon: true,
+        showCheckoutModal: true,
+        numberOfDecimals: 2,
+        cartItems: [
+        ],
+        clickOnAddToCart: function ($addTocart) {
+          goToCartIcon($addTocart);
+        },
+        afterAddOnCart: function (products, totalPrice, totalQuantity) {
+          console.log("afterAddOnCart", products, totalPrice, totalQuantity);
+        },
+        clickOnCartIcon: function ($cartIcon, products, totalPrice, totalQuantity) {
+          console.log("cart icon clicked", $cartIcon, products, totalPrice, totalQuantity);
+        },
+        checkoutCart: function (products, totalPrice, totalQuantity) {
+          var checkoutString = "Total Price: " + totalPrice + "\nTotal Quantity: " + totalQuantity;
+          checkoutString += "\n\n id \t name \t summary \t price \t quantity \t image path";
+          $.each(products, function () {
+            checkoutString += ("\n " + this.id + " \t " + this.name + " \t " + this.summary + " \t " + this.price + " \t " + this.quantity + " \t " + this.image);
+          });
+          alert(checkoutString)
+          console.log("checking out", products, totalPrice, totalQuantity);
+        },
+        getDiscountPrice: function (products, totalPrice, totalQuantity) {
+          console.log("calculating discount", products, totalPrice, totalQuantity);
+          return totalPrice * 1;
+        }
+      });
+
+      $("#addNewProduct").click(function (event) {
+        var currentElementNo = $(".row").children().length + 1;
+        $(".row").append('<div class="col-md-3 text-center"><img src="images/img_empty.png" width="150px" height="150px"><br>product ' + currentElementNo + ' - <strong>$' + currentElementNo + '</strong><br><button class="btn btn-danger my-cart-btn" data-id="' + currentElementNo + '" data-name="product ' + currentElementNo + '" data-summary="summary ' + currentElementNo + '" data-price="' + currentElementNo + '" data-quantity="1" data-image="images/img_empty.png">Add to Cart</button><a href="#" class="btn btn-info">Details</a></div>')
+      });
+    });
+  </script>
+
+</body>
+
+</html>
